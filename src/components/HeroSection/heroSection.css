@@ -1,0 +1,41 @@
+.hero-container {
+  background-color: #D9D1CA;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.hero-container > h1 {
+  font-size: 100px;
+  margin-top: 140px;
+}
+
+.hero-container > h2 {
+  font-size: 100px;
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 960px){
+  .hero-container > h1 {
+    font-size: 70px;
+  }
+
+  .hero-container > h2 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 60px;
+  }
+
+  .hero-container > h2 {
+    font-size: 60px;
+  }
+}
+
