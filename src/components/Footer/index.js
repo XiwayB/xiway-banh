@@ -10,7 +10,7 @@ const Footer = () => {
           <SocialLogo to= "/">
             X.B.
           </SocialLogo>
-          <WebsiteRights>X.B. © {new Date().getFullYear()}
+          <WebsiteRights>Coded and Designed by Xiway © {new Date().getFullYear()}
           </WebsiteRights>
           <SocialIcons>
             <SocialIconLink href="//github.com/XiwayB" target="_blank" aria-label="Github" rel="noopener noreferrer">

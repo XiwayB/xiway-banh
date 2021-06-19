@@ -9,7 +9,7 @@ export const Button = styled.button `
  font-weight: bold;
  font-size: 14px;
  margin-top: 170px;
- margin-bottom: 215px;
+ margin-bottom: 364px;
  margin-left: 78px;
 
  &:hover {
@@ -21,6 +21,11 @@ export const Button = styled.button `
  }
 
  @media screen and (max-width: 960px){
+    display: block;
+    margin: -10px 0 40px 160px;
+  }
+
+ @media screen and (max-width: 768px){
     display: block;
     margin: -10px 0 40px 140px;
   }
