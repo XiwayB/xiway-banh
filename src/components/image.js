@@ -26,7 +26,7 @@ const Image = () => {
 
   return(
     <div className="image-container">
-      <h1>Title 1</h1>
+      <h1>PROJECTS</h1>
       <div className="image-grid">
         {data.allFile.edges.map((image, key) =>(
           <Img key={key}

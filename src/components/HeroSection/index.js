@@ -1,6 +1,6 @@
 import React from "react"
 import "./heroSection.css"
-import {ButtonHero} from "../buttonElements"
+import { ButtonHero } from "../buttonElements"
 
 function HeroSection() {
   return (
@@ -8,7 +8,7 @@ function HeroSection() {
       <h1>HI,</h1>
       <h2>I'M XIWAY</h2>
       <h2>A PASSIONATE</h2>
-      <ButtonHero href="/contact/">CONTACT ME</ButtonHero>
+      <ButtonHero to="/contact">CONTACT ME</ButtonHero>
     </div>
   )
 }

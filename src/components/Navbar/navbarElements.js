@@ -72,7 +72,7 @@ export const NavMenu = styled.ul `
   }
 `
 
-export const NavLinks = styled(LinkSroll) `
+export const NavLinks = styled(LinkRouter) `
   color: #141414;
   display: flex;
   align-items: center;
