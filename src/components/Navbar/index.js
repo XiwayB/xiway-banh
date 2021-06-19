@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaBars, FaTimes } from "react-icons/fa"
+import { FaBars } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from "./navbarElements"
 
@@ -41,7 +41,7 @@ const Navbar = ({toggle}) => {
               <NavLinks to="/projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/contact">Contact</NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
