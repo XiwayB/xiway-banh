@@ -2,6 +2,7 @@ import React from "react"
 import {graphql, useStaticQuery} from "gatsby"
 import Img from "gatsby-image"
 import "./image.css"
+import { ButtonProjects } from "./buttonElements"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
@@ -25,17 +26,20 @@ const Image = () => {
   `)
 
   return(
-    <div className="image-container">
-      <h1>PROJECTS</h1>
-      <div className="image-grid">
-        {data.allFile.edges.map((image, key) =>(
-          <Img key={key}
-          className="image-item"
-          fluid={image.node.childImageSharp.fluid}
-          alt={image.node.base.split('.')[0]}
-          />
-          ))}
+    <div className="card-projects">
+      <div className="image-container">
+        <h1>PROJECTS</h1>
+          <div className="image-grid">
+          {data.allFile.edges.map((image, key) =>(
+            <Img key={key}
+            className="image-item"
+            fluid={image.node.childImageSharp.fluid}
+            alt={image.node.base.split('.')[0]}
+            />
+            ))}
+          </div>
       </div>
+        <ButtonProjects>LEARN MORE</ButtonProjects>
     </div>
   )
 }
