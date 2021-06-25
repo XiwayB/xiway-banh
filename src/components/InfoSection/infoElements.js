@@ -6,7 +6,7 @@ import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma,
 
 export const InfoContainer = styled.div`
   color: #fff;
-  margin: 780px 0;
+  margin-top: 819px;
 
   @media screen and (max-width: 768px) {
     padding: 100px O;
@@ -18,11 +18,7 @@ export const InfoWrapper = styled.div`
   z-index: 1;
   height: 860px;
   width: 100%;
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0 24px;
-  justify-content: center;
 `
 
 export const InfoRow = styled.div `
@@ -33,7 +29,6 @@ export const InfoRow = styled.div `
 `
 
 export const Column = styled.div`
-  margin-bottom: 200px;
   padding: 0 15px;
   display: flex;
 
@@ -44,9 +39,10 @@ export const Column = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 740px;
   padding-top: 0;
   padding-bottom: 60px;
+  margin-left: 300px;
 `
 
 export const Heading = styled.h1 `
@@ -61,7 +57,7 @@ export const Heading = styled.h1 `
 `
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 540px;
   margin: 35px 0;
   font-size: 20px;
   line-height: 34px;
@@ -73,10 +69,12 @@ export const DevIcons = styled.div`
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(50px, auto);
-  max-width: 1440px;
+  max-width: 3000px;
   color: black;
   font-size: 64px;
   margin-top: 55px;
+  width: 540px;
+  margin-right: 220px;
 `
 
 export const IconHtml = styled(ImHtmlFive) `

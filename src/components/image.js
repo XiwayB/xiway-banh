@@ -39,7 +39,9 @@ const Image = () => {
             ))}
           </div>
       </div>
+      <div>
         <ButtonProjects>LEARN MORE</ButtonProjects>
+      </div>
     </div>
   )
 }

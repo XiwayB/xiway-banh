@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,11 +17,11 @@ export const SocialMedia = styled.section`
 
 export const SocialMediaWrap = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
+  justify-content: flex-start;
 
 @media screen and (max-width: 820px) {
   flex-direction: column;
@@ -42,21 +42,28 @@ export const SocialLogo = styled(Link) `
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+  margin-left: 30%;
 `
 
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 140px;
+  margin-bottom: 24px;
 `
 
 export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 34px;
 `
 
+export const ScrollUp = styled(Link)`
+  margin-top: 46px;
+  color: white;
+  text-decoration: none;
 
+`
 
 
 
