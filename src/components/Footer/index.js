@@ -5,7 +5,7 @@ import { FooterContainer, SocialIcons, SocialIconLink, SocialLogo, SocialMedia, 
 const Footer = () => {
   return (
     <FooterContainer>
-      <ScrollUp to="/"> Scroll to the top </ScrollUp>
+      <ScrollUp to="/#NavbarContainer"> Scroll to the top </ScrollUp>
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to= "/">

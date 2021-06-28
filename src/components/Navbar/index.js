@@ -26,7 +26,7 @@ const Navbar = ({toggle}) => {
     <>
     <IconContext.Provider value={{ color: "#141414"}}>
       <Nav active={scroll} click={click}>
-        <NavbarContainer>
+        <NavbarContainer id="NavbarContainer">
           <NavLogo to="/">
           X.B
           </NavLogo>

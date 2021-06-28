@@ -42,7 +42,7 @@ export const TextWrapper = styled.div`
   max-width: 740px;
   padding-top: 0;
   padding-bottom: 60px;
-  margin-left: 300px;
+  margin-left: 236px;
 `
 
 export const Heading = styled.h1 `

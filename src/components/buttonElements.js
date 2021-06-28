@@ -22,6 +22,14 @@ export const Button = styled(Link) `
   padding: 14px;
  }
 
+ a {
+  text-decoration: none;
+  color: white;
+    &:hover {
+    color: black;
+    }
+ }
+
  @media screen and (max-width: 960px){
     display: block;
     margin: -10px 0 40px 160px;

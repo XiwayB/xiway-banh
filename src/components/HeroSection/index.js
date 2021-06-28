@@ -13,7 +13,7 @@ function HeroSection() {
                   'FRONT-END',
                   'BACK-END',
                   'FULL STACK']}
-        typeSpeed={50}
+        typeSpeed={90}
         loop>
       </Typed></h2>
       <h2>DEVELOPER</h2>
