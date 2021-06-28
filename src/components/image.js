@@ -40,7 +40,7 @@ const Image = () => {
           </div>
       </div>
       <div>
-        <ButtonProjects>LEARN MORE</ButtonProjects>
+        <ButtonProjects to='/projects'>LEARN MORE</ButtonProjects>
       </div>
     </div>
   )

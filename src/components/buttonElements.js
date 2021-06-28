@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-export const Button = styled.div `
+export const Button = styled(Link) `
  border-radius: 10px;
  background: black;
  padding: 15px;
@@ -10,8 +10,9 @@ export const Button = styled.div `
  font-weight: bold;
  font-size: 14px;
  margin-top: 170px;
- margin-bottom: 364px;
+ margin-bottom: 387px;
  margin-left: 78px;
+ text-decoration: none;
 
  &:hover {
   transition: all 0.1s ease-out;
@@ -32,7 +33,7 @@ export const Button = styled.div `
   }
 `
 
-export const ButtonProjects = styled.a `
+export const ButtonProjects = styled(Link) `
   border-radius: 10px;
   background: black;
   padding: 15px;
@@ -44,6 +45,7 @@ export const ButtonProjects = styled.a `
   margin-bottom: 364px;
   position: absolute;
   right: 20%;
+  text-decoration: none;
 
  &:hover {
   transition: all 0.1s ease-out;

@@ -14,9 +14,7 @@ const InfoSection = () => {
                 <Heading>FULL STACK DEVELOPER</Heading>
                 <Subtitle>Passionate about programming, I’m here to help people create a communication tool that will help them spread their ideas to the world.</Subtitle>
               </TextWrapper>
-              <div>
-                <Button>LEARN MORE</Button>
-              </div>
+                <Button to='/about'>LEARN MORE</Button>
             </Column>
 
             <Column>
@@ -76,9 +74,7 @@ const InfoSection = () => {
                     </IconLink>
                   </DevIcons>
               </TextWrapper>
-              <div>
-                <Button>LEARN MORE</Button>
-              </div>
+                <Button to='/projects'>LEARN MORE</Button>
             </Column>
 
           </InfoRow>
