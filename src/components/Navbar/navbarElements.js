@@ -101,6 +101,9 @@ export const NavLinks = styled(LinkRouter) `
 export const NavItem = styled.li `
   height: 80px;
 
+  a {
+    font-size: 20px;
+  }
   @media screen and (max-width: 960px) {
     width: 100%;
   }

@@ -10,14 +10,17 @@ import "../components/image.css"
 
 const Projects = () => {
 
-  const data = useStaticQuery(graphql`
+const data = useStaticQuery(graphql`
   query {
-  allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {eq: "TaBoard_On_Mac"}}) {
+  allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}
+   name: {nin: ["gatsby-astronaut", "gatsby-icon", "about_me"]}
+  }
+   ) {
     edges {
       node {
         base
         childImageSharp {
-        fluid(maxHeight: 900, maxWidth: 1200) {
+        fluid(maxHeight: 500, maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
         }
@@ -27,6 +30,33 @@ const Projects = () => {
 }
   `)
 
+   const findImage = (image) => {
+    const result = data.allFile.edges.find(element => element.node.base === image)
+    return result.node.childImageSharp.fluid
+    }
+//     console.log(findImage("ice.jpeg"))
+
+// console.log("DATA",data)
+// console.log("FIND", data.allFile.edges.find(image => image.node.base === "ice.jpeg"))
+
+
+// //   const data = useStaticQuery(graphql`
+// //   query($name: String!) {
+// //   allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {eq: $name}}) {
+// //     edges {
+// //       node {
+// //         base
+// //         childImageSharp {
+// //         fluid(maxHeight: 900, maxWidth: 1200) {
+// //           ...GatsbyImageSharpFluid
+// //         }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+// //   `)
+
   return(
     <Layout>
 {/*    <Seo title="Page two" />*/}
@@ -35,7 +65,7 @@ const Projects = () => {
 
         <ProjectCard>
           <ProjectSection1>
-            <Img className="image-project" fluid={data.allFile.edges[0].node.childImageSharp.fluid}/>
+          <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")} />
             <ProjectMainInfos>
               <h2>TaBoard</h2>
               <p>TaBoard is a rails application that will free you
@@ -86,7 +116,7 @@ const Projects = () => {
 
         <ProjectCard>
           <ProjectSection1>
-            <Img className="image-project" fluid={data.allFile.edges[0].node.childImageSharp.fluid}/>
+            <Img className="image-project" fluid={findImage("T.A.L.O.N_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>T.A.L.O.N</h2>
               <p>T.A.L.O.N is a WeChat MiniProgram which works as
@@ -131,7 +161,7 @@ const Projects = () => {
 
         <ProjectCard>
           <ProjectSection1>
-            <Img className="image-project" fluid={data.allFile.edges[0].node.childImageSharp.fluid}/>
+            <Img className="image-project" fluid={findImage("All_you_can_watch_on_Mac.png")} />
             <ProjectMainInfos>
               <h2>All You Can Watch</h2>
               <p>A simple rails applications to classify your favorite
@@ -173,7 +203,7 @@ const Projects = () => {
 
         <ProjectCard>
           <ProjectSection1>
-            <Img className="image-project" fluid={data.allFile.edges[0].node.childImageSharp.fluid}/>
+            <Img className="image-project" fluid={findImage("JieQi_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>JieQi</h2>
               <p>A WeChat MiniProgram that keeps you healthy <br></br>
