@@ -48,3 +48,16 @@
   transition: 0.6s all ease !important;
   cursor: pointer;
 }
+
+.image-project {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  left: -49px;
+  top: 24px;
+}
+
+.image-project img:hover{
+  transform: scale(1.1);
+  transition: 0.6s all ease !important;
+}

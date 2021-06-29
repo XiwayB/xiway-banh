@@ -1,7 +1,6 @@
 import React from "react"
 import { Button } from "../buttonElements"
 import { InfoContainer, InfoWrapper, InfoRow, Column, TextWrapper, Heading, Subtitle, DevIcons, IconHtml, IconCss, IconSass, IconBootstrap, IconJavaScript, IconReact, IconRedux, IconRuby, IconRails, IconPostgreSql, IconGit, IconGitHub, IconPostman, IconWebpack, IconGatsby, IconFigma, IconIllustrator, IconLink} from "./infoElements"
-// import Image from "../image"
 
 const InfoSection = () => {
   return(

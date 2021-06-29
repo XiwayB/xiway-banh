@@ -13,7 +13,7 @@ const About = () => {
   const data = useStaticQuery(graphql`
   query {
   allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}
-   name: {nin: ["gatsby-astronaut", "gatsby-icon", "ice", "jump", "night_time", "plant"]}
+   name: {nin: ["gatsby-astronaut", "gatsby-icon", "ice", "jump", "night_time", "plant", "TaBoard_On_Mac"]}
   }
    ) {
     edges {
@@ -224,8 +224,6 @@ const About = () => {
 
       <AboutButton>
         <Button>
-        {/*<a href="../images/CV_XIWAY_FR_EN.pdf" download>DOWNLOAD RESUME
-        </a>*/}
         <a href={downloadFile} download>DOWNLOAD RESUME</a>{` `}
         </Button>
       </AboutButton>

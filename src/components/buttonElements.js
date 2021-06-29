@@ -91,3 +91,24 @@ export const ButtonHero = styled(Link) `
  }
 
 `
+
+export const ButtonProject = styled.a `
+ border-radius: 10px;
+ background: black;
+ padding: 12px 32px;
+ cursor: pointer;
+ color: white;
+ text-decoration: none;
+ margin-right: 24px;
+ margin-top: 16px;
+ font-size: 16px;
+
+ &:hover {
+  transition: all 0.1s ease-out;
+  background-color: #FFFFFF;
+  border: black 3px solid;
+  color: black;
+  padding: 8px 29px;
+ }
+
+`
