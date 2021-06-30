@@ -80,7 +80,7 @@ export const ButtonHero = styled(Link) `
  padding: 15px;
  cursor: pointer;
  color: white;
- margin-top: 65px;
+ margin-top: 45px;
  text-decoration: none;
 
  &:hover {

@@ -29,34 +29,10 @@ const data = useStaticQuery(graphql`
   }
 }
   `)
-
    const findImage = (image) => {
     const result = data.allFile.edges.find(element => element.node.base === image)
     return result.node.childImageSharp.fluid
     }
-//     console.log(findImage("ice.jpeg"))
-
-// console.log("DATA",data)
-// console.log("FIND", data.allFile.edges.find(image => image.node.base === "ice.jpeg"))
-
-
-// //   const data = useStaticQuery(graphql`
-// //   query($name: String!) {
-// //   allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {eq: $name}}) {
-// //     edges {
-// //       node {
-// //         base
-// //         childImageSharp {
-// //         fluid(maxHeight: 900, maxWidth: 1200) {
-// //           ...GatsbyImageSharpFluid
-// //         }
-// //         }
-// //       }
-// //     }
-// //   }
-// // }
-// //   `)
-
   return(
     <Layout>
 {/*    <Seo title="Page two" />*/}
