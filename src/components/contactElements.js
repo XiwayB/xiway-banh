@@ -23,6 +23,10 @@ export const ContactSubSection = styled.div`
   display: flex;
   margin-bottom: 12px;
 
+  p {
+    font-size: 21px;
+  }
+
 `
 
 export const IconLink = styled.a`

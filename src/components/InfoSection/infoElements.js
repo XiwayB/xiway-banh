@@ -6,7 +6,7 @@ import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma,
 
 export const InfoContainer = styled.div`
   color: #fff;
-  margin-top: 819px;
+  margin-top: 45rem;
 
   @media screen and (max-width: 768px) {
     padding: 100px O;
@@ -39,6 +39,7 @@ export const Column = styled.div`
 `
 
 export const TextWrapper = styled.div`
+  opacity: 0;
   max-width: 740px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -58,7 +59,7 @@ export const Heading = styled.h1 `
 
 export const Subtitle = styled.p`
   max-width: 540px;
-  margin: 35px 0;
+  margin: 83px 0;
   font-size: 20px;
   line-height: 34px;
   color: black;

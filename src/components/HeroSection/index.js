@@ -6,7 +6,7 @@ import Typed from 'react-typed'
 function HeroSection() {
   return (
     <div className="hero-container">
-      <h1>I'M XIWAY</h1>
+      <h1>HI, I'M XIWAY</h1>
       <h2>A PASSIONATE</h2>
       <h2><Typed
         strings={[

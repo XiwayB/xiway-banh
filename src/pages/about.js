@@ -7,7 +7,7 @@ import { Button } from "../components/buttonElements.js"
 import {graphql, useStaticQuery} from "gatsby"
 import Img from "gatsby-image"
 
-import downloadFile from '../images/CV_XIWAY_FR_EN.pdf'
+import downloadFile from '../images/CV_XIWAY_EN_FR.pdf'
 
 const About = () => {
   const data = useStaticQuery(graphql`

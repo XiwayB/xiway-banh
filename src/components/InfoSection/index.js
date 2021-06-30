@@ -1,23 +1,56 @@
-import React from "react"
+import React, { useRef } from "react"
+import { useIntersection } from "react-use"
 import { Button } from "../buttonElements"
 import { InfoContainer, InfoWrapper, InfoRow, Column, TextWrapper, Heading, Subtitle, DevIcons, IconHtml, IconCss, IconSass, IconBootstrap, IconJavaScript, IconReact, IconRedux, IconRuby, IconRails, IconPostgreSql, IconGit, IconGitHub, IconPostman, IconWebpack, IconGatsby, IconFigma, IconIllustrator, IconLink} from "./infoElements"
+import gsap from "gsap"
 
 const InfoSection = () => {
+
+  const sectionRef = useRef(null)
+
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -60,
+      ease: 'power4.out',
+      stagger: {
+        amount: .3
+      }
+    })
+  };
+
+  const fadeOut = (element) => {
+   // gsap.to(element, 1, {
+   //    opacity: 0,
+   //    y: -20,
+   //    ease: 'power4.out',
+   //  })
+  };
+
+  intersection && intersection.intersectionRatio < 0.1 ?
+  fadeOut(".fadeIn") : fadeIn(".fadeIn");
+
   return(
     <>
       <InfoContainer>
         <InfoWrapper>
           <InfoRow>
-            <Column>
-              <TextWrapper>
+            <Column ref={sectionRef}>
+              <TextWrapper className="fadeIn">
                 <Heading>FULL STACK DEVELOPER</Heading>
-                <Subtitle>Passionate about programming, I’m here to help people create a communication tool that will help them spread their ideas to the world.</Subtitle>
+                <Subtitle>Passionate about programming, I am helping people to create a amazing applications that will enable them to spread their ideas to the world.</Subtitle>
               </TextWrapper>
                 <Button to='/about'>LEARN MORE</Button>
             </Column>
 
-            <Column>
-              <TextWrapper>
+            <Column ref={sectionRef}>
+              <TextWrapper className="fadeIn">
                 <Heading>STACK & TOOLS</Heading>
                   <DevIcons>
                     <IconLink href="//www.w3schools.com/html/" target="_blank">

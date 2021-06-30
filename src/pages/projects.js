@@ -1,14 +1,45 @@
-import * as React from "react"
+import React, { useRef } from "react"
+import { useIntersection } from "react-use"
 import Layout from "../components/layout"
-import Image from "../components/image"
 // import Seo from "../components/seo"
-import { ProjectsPageWrapper, ProjectSection1, StackIcons, IconHtml, IconCss, IconJavaScript, IconRails, IconLink, ProjectButtons, ProjectCard, ImageSection, ProjectMainInfos, ProjectSection2, IconHeroku, IconWXMP } from "../components/projectsElements.js"
+import { ProjectsPageWrapper, ProjectSection1, StackIcons, IconHtml, IconCss, IconJavaScript, IconRails, IconLink, ProjectButtons, ProjectCard, ProjectMainInfos, IconHeroku, IconWXMP } from "../components/projectsElements.js"
 import { ButtonProject } from "../components/buttonElements.js"
 import {graphql, useStaticQuery} from "gatsby"
 import Img from "gatsby-image"
 import "../components/image.css"
+import gsap from "gsap"
 
 const Projects = () => {
+
+  const sectionRef = useRef(null)
+
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -60,
+      ease: 'power4.out',
+      stagger: {
+        amount: .3
+      }
+    })
+  };
+
+  const fadeOut = (element) => {
+   // gsap.to(element, 1, {
+   //    opacity: 0,
+   //    y: -20,
+   //    ease: 'power4.out',
+   //  })
+  };
+
+  intersection && intersection.intersectionRatio < 0.1 ?
+  fadeOut(".fadeIn") : fadeIn(".fadeIn");
 
 const data = useStaticQuery(graphql`
   query {
@@ -36,12 +67,12 @@ const data = useStaticQuery(graphql`
   return(
     <Layout>
 {/*    <Seo title="Page two" />*/}
-      <ProjectsPageWrapper>
-        <h1>PROJECTS</h1>
+      <ProjectsPageWrapper ref={sectionRef}>
+        <h1 className="fadeIn">PROJECTS</h1>
 
-        <ProjectCard>
-          <ProjectSection1>
-          <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")} />
+        <ProjectCard className="fadeIn">
+          <ProjectSection1 id="taboard">
+          <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")}/>
             <ProjectMainInfos>
               <h2>TaBoard</h2>
               <p>TaBoard is a rails application that will free you
@@ -90,8 +121,8 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard>
-          <ProjectSection1>
+        <ProjectCard className="fadeIn">
+          <ProjectSection1 id="t.a.l.o.n" >
             <Img className="image-project" fluid={findImage("T.A.L.O.N_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>T.A.L.O.N</h2>
@@ -135,8 +166,8 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard>
-          <ProjectSection1>
+        <ProjectCard className="fadeIn">
+          <ProjectSection1 id="all-you-can-watch">
             <Img className="image-project" fluid={findImage("All_you_can_watch_on_Mac.png")} />
             <ProjectMainInfos>
               <h2>All You Can Watch</h2>
@@ -177,8 +208,8 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard>
-          <ProjectSection1>
+        <ProjectCard className="fadeIn">
+          <ProjectSection1 id="jieqi">
             <Img className="image-project" fluid={findImage("JieQi_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>JieQi</h2>

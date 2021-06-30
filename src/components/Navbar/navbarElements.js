@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { Link as LinkRouter} from "gatsby"
-import { Link as LinkSroll } from "react-scroll"
 
 export const Nav = styled.nav`
   background: ${({active}) => active ? "#fff" : "#D9D1CA"};
@@ -77,12 +76,12 @@ export const NavLinks = styled(LinkRouter) `
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
   height: 100%;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid black;
+    border-bottom: 5px solid black;
   }
 
   @media screen and (max-width: 960px) {
@@ -90,23 +89,47 @@ export const NavLinks = styled(LinkRouter) `
     padding: 2rem;
     width: 100%;
     display: table;
-
-    &:hover {
-      color: red;
-      transition: all 0.3s ease;
-    }
   }
 `
 
 export const NavItem = styled.li `
-  height: 80px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
   a {
     font-size: 20px;
+    }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+
+   &::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #000;
+    transition: width .3s;
+  }
+
+  &:hover:after{
+    width: 100%;
+    transition: width .3s;
+  }
+
   @media screen and (max-width: 960px) {
     width: 100%;
   }
+
+
 `
-
-

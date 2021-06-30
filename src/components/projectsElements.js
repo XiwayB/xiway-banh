@@ -5,7 +5,7 @@ import { SiJavascript, SiRails, SiHeroku } from "react-icons/si"
 import { DiCss3 } from "react-icons/di"
 
 export const ProjectsPageWrapper = styled.div`
-  margin-top: 66px;
+  margin-top: 120px;
   margin-bottom: 80px;
   margin-left: 227px;
 
@@ -24,8 +24,6 @@ export const ProjectSection1 = styled.div`
   margin-top: 100px;
   margin-bottom: 146px;
 `
-
-export const ImageSection = styled.div``
 
 export const ProjectMainInfos = styled.div`
     h2 {
@@ -102,7 +100,4 @@ export const IconLink = styled.a`
 
 export const ProjectButtons = styled.div`
   display: flex;
-`
-
-export const ProjectSection2 = styled.div`
 `

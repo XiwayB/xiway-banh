@@ -1,6 +1,5 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import Image from "../components/image"
 // import Seo from "../components/seo"
 import { ContactPageWrapper, ContactSection, ContactSubSection, IconLink, IconEmail, IconLinkedIn, IconGitHub } from "../components/contactElements.js"
 
