@@ -32,7 +32,7 @@ export const Column = styled.div`
   padding: 0 15px;
   display: flex;
 
-  @media screen and (max-width: 960px){
+  @media screen and (max-width: 768px){
     display: block;
     margin: 150px 34px;
   }

@@ -44,6 +44,11 @@ export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
   margin-left: 30%;
+
+  @media screen and (max-width: 820px) {
+    margin-top: 12px;
+    margin-left: 12px;
+  }
 `
 
 export const SocialIcons = styled.div`

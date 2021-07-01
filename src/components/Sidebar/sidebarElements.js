@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { FaTimes } from "react-icons/fa"
-import { Link as LinkScroll } from "react-scroll"
+import { Link } from "gatsby"
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -47,7 +47,7 @@ export const SidebarMenu = styled.ul`
 `
 
 
-export const SidebarLink = styled(LinkScroll)`
+export const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,13 +60,14 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover{
-    border-bottom: 3px solid black;
-    transition: 0.2s ease-in-out;
+    opacity: 0.6;
   }
+
 `
 
+  export const SideBarItem = styled.li`
 
-
+  `
 
 
 

@@ -90,6 +90,11 @@ export const ButtonHero = styled(Link) `
   color: black;
  }
 
+  @media only screen and (max-width: 768px) {
+    margin-top: 105px;
+    font-size: 15px;
+  }
+}
 `
 
 export const ButtonProject = styled.a `
