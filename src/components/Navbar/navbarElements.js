@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 2;
 
-  @media screen and (max-width: 960px){
+  @media screen and (max-width: 768px){
     background: ${({ click }) => (click ? "fff" : "transparent")};
     transition: 0.8s all ease;
   }
@@ -37,7 +37,11 @@ export const NavLogo = styled(LinkRouter)`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 992px) {
+    margin-left: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
     margin-left: 1.5rem;
   }
 
@@ -46,7 +50,7 @@ export const NavLogo = styled(LinkRouter)`
 export const MobileIcon = styled.div `
   display: none;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
@@ -63,7 +67,7 @@ export const NavMenu = styled.ul `
   list-style: none;
   text-align: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -89,7 +93,7 @@ export const NavLinks = styled(LinkRouter) `
     border-bottom: 5px solid black;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -132,7 +136,7 @@ export const NavItem = styled.li `
     transition: width .3s;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 

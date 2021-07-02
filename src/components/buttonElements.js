@@ -30,15 +30,18 @@ export const Button = styled(Link) `
     }
  }
 
- @media screen and (max-width: 960px){
+  @media screen and (max-width: 992px){
     display: block;
-    margin: -10px 0 40px 160px;
+    margin: -223px 501px 234px 73px;
   }
 
- @media screen and (max-width: 768px){
-    display: block;
-    margin: -10px 0 40px 140px;
+  @media screen and (max-width: 768px){
+    margin: 0px 98px 42px 193px;
+    position: relative;
+    top: -250px;
+    left: -43px;
   }
+
 `
 
 export const ButtonProjects = styled(Link) `
@@ -63,15 +66,15 @@ export const ButtonProjects = styled(Link) `
   padding: 14px;
  }
 
- @media screen and (max-width: 960px){
+  @media screen and (max-width: 992px){
     display: block;
-    margin: -10px 0 40px 160px;
+    margin: 419px 388px 0px 0px;
   }
 
- @media screen and (max-width: 768px){
-    display: block;
-    margin: -10px 0 40px 140px;
+  @media screen and (max-width: 768px){
+    margin: 1106px 79px;
   }
+
 `
 
 export const ButtonHero = styled(Link) `
@@ -90,11 +93,17 @@ export const ButtonHero = styled(Link) `
   color: black;
  }
 
+  @media only screen and (max-width: 992px) {
+    margin-top: 110px;
+    font-size: 18px;
+  }
+
   @media only screen and (max-width: 768px) {
     margin-top: 105px;
     font-size: 15px;
   }
-}
+
+
 `
 
 export const ButtonProject = styled.a `
@@ -115,5 +124,55 @@ export const ButtonProject = styled.a `
   color: black;
   padding: 8px 29px;
  }
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 23px;
+    margin-right: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+`
+
+export const ButtonDownload = styled(Link) `
+ border-radius: 10px;
+ background: black;
+ padding: 15px;
+ cursor: pointer;
+ color: white;
+ font-weight: bold;
+ font-size: 14px;
+ margin-top: 170px;
+ margin-bottom: 387px;
+ margin-left: 14px;
+ text-decoration: none;
+
+ &:hover {
+  transition: all 0.1s ease-out;
+  background-color: white;
+  border: black 3px solid;
+  color: black;
+  padding: 14px;
+ }
+
+ a {
+  text-decoration: none;
+  color: white;
+    &:hover {
+    color: black;
+    }
+ }
+
+  @media screen and (max-width: 992px){
+    display: block;
+    margin: -10px 149px 40px 319px;
+  }
+
+  @media screen and (max-width: 768px){
+    margin-right: -23px;
+    margin-left: 128px;
+  }
 
 `

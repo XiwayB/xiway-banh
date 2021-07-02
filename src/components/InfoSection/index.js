@@ -44,7 +44,7 @@ const InfoSection = () => {
             <Column ref={sectionRef}>
               <TextWrapper className="fadeIn">
                 <Heading>FULL STACK DEVELOPER</Heading>
-                <Subtitle>Passionate about programming, I am helping people to create a amazing applications that will enable them to spread their ideas to the world.</Subtitle>
+                <Subtitle>Passionate about programming, I am helping people to create amazing applications that will enable them to spread their ideas to the world</Subtitle>
               </TextWrapper>
                 <Button to='/about'>LEARN MORE</Button>
             </Column>

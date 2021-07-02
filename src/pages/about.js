@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import "../components/image.css"
 // import Seo from "../components/seo"
 import { AboutPageWrapper, AboutMeSection, TitleSection, DotIcon, AboutMeTitle, ContentSection, LineBorder, ContentBody, AboutMeSubtitle, AboutMeText, AboutMeLocation, EducationSection, AboutButton } from "../components/aboutElements.js"
-import { Button } from "../components/buttonElements.js"
+import { ButtonDownload } from "../components/buttonElements.js"
 import {graphql, useStaticQuery} from "gatsby"
 import Img from "gatsby-image"
 
@@ -20,7 +20,7 @@ const About = () => {
       node {
         base
         childImageSharp {
-        fluid(maxHeight: 800, maxWidth:800) {
+        fluid(maxHeight: 500, maxWidth:500) {
           ...GatsbyImageSharpFluid
         }
         }
@@ -41,15 +41,14 @@ const About = () => {
             />
             ))}
 
-        <h2>A LITTLE BIT MORE</h2>
-        <h2>ABOUT ME</h2>
+        <h2>A LITTLE BIT MORE ABOUT ME</h2>
         <h3>EXPERIENCES</h3>
 
         <AboutMeSection>
           <TitleSection>
             <DotIcon />
             <AboutMeTitle>
-              Customer Success Carer
+              Customer Success Manager
             </AboutMeTitle>
           </TitleSection>
 
@@ -65,13 +64,9 @@ const About = () => {
               </AboutMeLocation>
               <AboutMeText>
                 I started my journey working in a Fintech.
-                <br></br>
-                I was taking care of end-users
-                by guiding them creating
-                <br></br>
-                their accounts and providing them advice to make the
-                <br></br>
-                best use of the product.
+                I was taking care of end-users by helping them creating
+                their accounts and providing them advices so that they can make the
+                best use of the product
               </AboutMeText>
             </ContentBody>
           </ContentSection>
@@ -79,7 +74,7 @@ const About = () => {
           <TitleSection>
             <DotIcon />
             <AboutMeTitle>
-              Operation team Carer - Operations Project Manager
+              Operations Training and Project Manager
             </AboutMeTitle>
           </TitleSection>
 
@@ -94,12 +89,9 @@ const About = () => {
                 QONTO - Paris, France
               </AboutMeLocation>
               <AboutMeText>
-                I was helping Operation team to take care
-                of <br></br>
-                our end-users
+                I was helping Operation team members
                 by providing them the best tools and
-                <br></br>
-                creating efficent processes.
+                creating efficent processes so that they can focus on taking care of end-users
               </AboutMeText>
             </ContentBody>
           </ContentSection>
@@ -123,11 +115,8 @@ const About = () => {
               </AboutMeLocation>
               <AboutMeText>
                 I helped developers, clients and end-users
-                <br></br>
                 to have everything they needed so that they can focus on
-                <br></br>
-                their work and
-                main expertise without any worry.
+                their work and main expertise without any worry
               </AboutMeText>
             </ContentBody>
           </ContentSection>
@@ -150,9 +139,8 @@ const About = () => {
                 Worlwide
               </AboutMeLocation>
               <AboutMeText>
-                It’s now my turn to help end-users by creating
-                <br></br>
-                applications thought by innovative people.
+                I can now help end-users by creating
+                applications thought by innovative people and meant to solve all kinds of problems
               </AboutMeText>
             </ContentBody>
           </ContentSection>
@@ -223,9 +211,9 @@ const About = () => {
       </AboutPageWrapper>
 
       <AboutButton>
-        <Button>
+        <ButtonDownload>
         <a href={downloadFile} download>DOWNLOAD RESUME</a>{` `}
-        </Button>
+        </ButtonDownload>
       </AboutButton>
 
     </Layout>

@@ -12,6 +12,24 @@ export const ProjectsPageWrapper = styled.div`
   h1 {
     font-size: 50px;
   }
+
+  @media(max-width: 992px){
+    margin-left: 11rem;
+    margin-top: 10rem;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media(max-width: 768px){
+    margin-left: 70px;
+
+    h1 {
+    font-size: 40px;
+    }
+  }
+
 `
 
 export const ProjectCard = styled.div`
@@ -23,25 +41,63 @@ export const ProjectSection1 = styled.div`
   display: flex;
   margin-top: 100px;
   margin-bottom: 146px;
+
+  @media screen and (max-width: 992px){
+    display: block;
+  }
+
+  @media screen and (max-width: 768px){
+    display: block;
+  }
+
 `
 
 export const ProjectMainInfos = styled.div`
-    h2 {
+  width: 450px;
+
+  h2 {
       font-size: 30px;
       margin-bottom: 24px;
-  }
+    }
 
-    p {
+  p {
       margin-bottom: 24px;
       line-height: 30px;
       font-size: 18px;
     }
 
-    ul {
+  ul {
       line-height: 24px;
       font-size: 18px;
       margin: -17px 0 39px 22px;
     }
+
+  @media screen and (max-width: 992px){
+      width: 400px;
+
+    p {
+      font-size: 16px;
+    }
+
+    ul {
+      font-size: 16px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px){
+    width: 343px;
+
+    p {
+      font-size: 16px;
+    }
+
+    ul {
+      font-size: 16px;
+    }
+
+  }
+
 `
 
 export const StackIcons = styled.div`
@@ -52,6 +108,15 @@ export const StackIcons = styled.div`
       margin-right: 24px;
       font-size: 18px;
     }
+
+  @media screen and (max-width: 768px){
+    display: block;
+    margin-top: -18px;
+
+    p {
+      font-size: 16px;
+    }
+  }
 `
 
 export const IconHtml = styled(ImHtmlFive) `

@@ -51,7 +51,7 @@ const data = useStaticQuery(graphql`
       node {
         base
         childImageSharp {
-        fluid(maxHeight: 500, maxWidth: 800) {
+        fluid(maxHeight: 500, maxWidth: 700) {
           ...GatsbyImageSharpFluid
         }
         }
@@ -75,23 +75,21 @@ const data = useStaticQuery(graphql`
           <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")}/>
             <ProjectMainInfos>
               <h2>TaBoard</h2>
-              <p>TaBoard is a rails application that will free you
-              from your
-              <br></br>
-              Google chrome tabs nightmare. This application was build with 4 <br></br>
-              other developers.</p>
+              <p>A rails application that will free you
+              from your Google chrome tabs nightmare.
+              This application was build with 4 other developers.</p>
               <p>My roles:</p>
               <ul>
                 <li>Product Manager</li>
                 <li>Lead developer</li>
                 <li>
                   Back-end developer: created the DB schema and
-                  implemented <br></br> rails structure, created APIs for the
+                  implemented rails structure, created REST APIs for the
                   front-end
                 </li>
                 <li>
                   Front-end developer: implemented the ‘Create folder’
-                  pop-up <br></br> and the show page’s design
+                  pop-up and the show page’s design
                 </li>
               </ul>
               <StackIcons>
@@ -126,16 +124,14 @@ const data = useStaticQuery(graphql`
             <Img className="image-project" fluid={findImage("T.A.L.O.N_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>T.A.L.O.N</h2>
-              <p>T.A.L.O.N is a WeChat MiniProgram which works as
-                an emergency <br></br>
-                map to be used during natural disasters. <br></br>
-                This application was build with 4
-              other developers.</p>
+              <p>A WeChat MiniProgram which works as
+                an emergency map to be used during natural disasters (or just for fun!).
+                This application was build with 4 other developers.</p>
               <p>My roles:</p>
               <ul>
                 <li>Product Manager</li>
                 <li>
-                  Front-end developer: implemented the profile page (take pictures <br></br>
+                  Front-end developer: implemented the profile page (take pictures
                     and store it in the cloud, make a sound when clicking on the alarm icon)
                 </li>
               </ul>
@@ -158,7 +154,7 @@ const data = useStaticQuery(graphql`
                 </IconLink>
               </StackIcons>
               <ProjectButtons>
-                <ButtonProject href="//res.cloudinary.com/xiway/image/upload/v1619773130/111619772991_.pic_mxtbva.jpg" target="_blank">SCAN QR CODE</ButtonProject>
+                <ButtonProject href="//res.cloudinary.com/xiway/image/upload/v1619773130/111619772991_.pic_mxtbva.jpg" target="_blank">QR CODE</ButtonProject>
                 <ButtonProject href="//github.com/Marshall-Hao/t.a.l.o.n_frontend" target="_blank">CODE</ButtonProject>
                 <ButtonProject href="//www.youtube.com/watch?v=RCEI5H__a5Q" target="_blank">MEDIA</ButtonProject>
               </ProjectButtons>
@@ -171,10 +167,9 @@ const data = useStaticQuery(graphql`
             <Img className="image-project" fluid={findImage("All_you_can_watch_on_Mac.png")} />
             <ProjectMainInfos>
               <h2>All You Can Watch</h2>
-              <p>A simple rails applications to classify your favorite
-                movies <br></br>
-                by genres and add your personal reviews.
-                <p>I build this aplication by myself.</p>
+              <p>A simple rails application to classify your favorite
+                movies by genres and add your personal reviews.
+                <p>I built this aplication by myself.</p>
                 It was a good occasion to test some npm packages:</p>
                 <ul>
                   <li>Draggable</li>
@@ -213,20 +208,18 @@ const data = useStaticQuery(graphql`
             <Img className="image-project" fluid={findImage("JieQi_on_iPhone_2.png")} />
             <ProjectMainInfos>
               <h2>JieQi</h2>
-              <p>A WeChat MiniProgram that keeps you healthy <br></br>
-                while following Chinese traditional advices based on
-Solar terms.</p>
+              <p>A WeChat MiniProgram that keeps you healthy
+                while following Chinese traditional advices based on Solar terms.</p>
                 <p>This application was build with 3
               other developers.</p>
                 <p>My roles:</p>
                 <ul>
-                  <li>Product UI/UX Designer: design was based on <br></br>
-                  Chinese traditional calendars</li>
+                  <li>UI/UX Designer: design was based on Chinese traditional calendar</li>
                   <li>Front-end developer: implemented the home page’s
-                    <br></br>
-                    design, developed the show-page functionnalities <br></br>
-                    (fetching informations from the Backend As A Service <br></br>
-                      to be displayed on the app), profile page functionnalities <br></br>(generate a report to send it to your friends)</li>
+
+                    design, developed the show-page functionnalities
+                    (fetching informations from the Backend As A Service
+                      to be displayed on the app), profile page functionnalities (generate a report to send it to your friends)</li>
                 </ul>
               <StackIcons>
                 <p>Stack & Platform/ Framework:</p>
@@ -244,7 +237,7 @@ Solar terms.</p>
                 </IconLink>
               </StackIcons>
               <ProjectButtons>
-                <ButtonProject href="//res.cloudinary.com/xiway/image/upload/v1619773413/JieQi_QR_Code_qxzqnx.jpg" target="_blank">SCAN QR CODE</ButtonProject>
+                <ButtonProject href="//res.cloudinary.com/xiway/image/upload/v1619773413/JieQi_QR_Code_qxzqnx.jpg" target="_blank">QR CODE</ButtonProject>
                 <ButtonProject href="//github.com/ricardorocer/JIEQIV1" target="_blank">CODE</ButtonProject>
               </ProjectButtons>
             </ProjectMainInfos>

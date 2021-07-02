@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Link as LinkSroll } from "react-scroll"
-
+import { Link as LinkRouter } from "gatsby"
 
 export const FooterContainer = styled.div`
   background-color: black;
@@ -9,6 +9,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  width: 100%;
 `
 
 export const SocialMedia = styled.section`
@@ -24,12 +25,12 @@ export const SocialMediaWrap = styled.div`
   margin: 20px auto;
   justify-content: flex-start;
 
-@media screen and (max-width: 820px) {
-  flex-direction: column;
-}
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
-export const SocialLogo = styled(LinkSroll) `
+export const SocialLogo = styled(LinkRouter) `
   color: #fff;
   justify-self; start;
   cursor: pointer;
@@ -45,7 +46,11 @@ export const WebsiteRights = styled.small`
   margin-bottom: 16px;
   margin-left: 30%;
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 992px) {
+    margin-left: 25%;
+  }
+
+  @media screen and (max-width: 768px) {
     margin-top: 12px;
     margin-left: 12px;
   }
