@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import { ImHtmlFive } from "react-icons/im"
-import { RiMiniProgramFill } from "react-icons/ri"
-import { SiJavascript, SiRails, SiHeroku } from "react-icons/si"
-import { DiCss3 } from "react-icons/di"
+import styled from "styled-components";
+import { ImHtmlFive } from "react-icons/im";
+import { RiMiniProgramFill } from "react-icons/ri";
+import { SiJavascript, SiRails, SiHeroku } from "react-icons/Si";
+import { DiCss3 } from "react-icons/di";
 
 export const ProjectsPageWrapper = styled.div`
   margin-top: 120px;

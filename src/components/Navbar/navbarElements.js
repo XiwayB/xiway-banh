@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Link as LinkRouter} from "gatsby"
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const Nav = styled.nav`
   background: ${({active}) => active ? "#fff" : "#D9D1CA"};
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div `
   max-width: 1000px;
 `
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(Link)`
   color: #141414;
   justify-self: flex-start;
   cursor: pointer;
@@ -80,7 +80,7 @@ export const NavMenu = styled.ul `
   }
 `
 
-export const NavLinks = styled(LinkRouter) `
+export const NavLinks = styled(Link) `
   color: #141414;
   display: flex;
   align-items: center;
@@ -91,6 +91,7 @@ export const NavLinks = styled(LinkRouter) `
 
   &.active {
     border-bottom: 5px solid black;
+    padding-top: 8px;
   }
 
   @media screen and (max-width: 768px) {

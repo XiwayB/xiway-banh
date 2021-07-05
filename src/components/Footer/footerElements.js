@@ -1,6 +1,5 @@
-import styled from "styled-components"
-import { Link as LinkSroll } from "react-scroll"
-import { Link as LinkRouter } from "gatsby"
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const FooterContainer = styled.div`
   background-color: black;
@@ -30,7 +29,7 @@ export const SocialMediaWrap = styled.div`
   }
 `
 
-export const SocialLogo = styled(LinkRouter) `
+export const SocialLogo = styled(Link) `
   color: #fff;
   justify-self; start;
   cursor: pointer;
@@ -69,7 +68,7 @@ export const SocialIconLink = styled.a`
   font-size: 34px;
 `
 
-export const ScrollUp = styled(LinkSroll)`
+export const ScrollUp = styled.a`
   margin-top: 46px;
   color: white;
   text-decoration: none;

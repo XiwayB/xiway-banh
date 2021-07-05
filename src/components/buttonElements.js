@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const Button = styled(Link) `
  border-radius: 10px;
@@ -136,7 +136,7 @@ export const ButtonProject = styled.a `
 
 `
 
-export const ButtonDownload = styled(Link) `
+export const ButtonDownload = styled.div `
  border-radius: 10px;
  background: black;
  padding: 15px;
@@ -145,8 +145,8 @@ export const ButtonDownload = styled(Link) `
  font-weight: bold;
  font-size: 14px;
  margin-top: 170px;
- margin-bottom: 387px;
- margin-left: 14px;
+ margin-left: 621px;
+ margin-right: 668px;
  text-decoration: none;
 
  &:hover {

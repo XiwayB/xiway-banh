@@ -1,11 +1,11 @@
-import * as React from "react"
-import Layout from "../components/layout"
-import "../components/image.css"
+import * as React from "react";
+import Layout from "../components/layout";
+import "../components/image.css";
 // import Seo from "../components/seo"
-import { AboutPageWrapper, AboutMeSection, TitleSection, DotIcon, AboutMeTitle, ContentSection, LineBorder, ContentBody, AboutMeSubtitle, AboutMeText, AboutMeLocation, EducationSection, AboutButton } from "../components/aboutElements.js"
-import { ButtonDownload } from "../components/buttonElements.js"
-import {graphql, useStaticQuery} from "gatsby"
-import Img from "gatsby-image"
+import { AboutPageWrapper, AboutMeSection, TitleSection, DotIcon, AboutMeTitle, ContentSection, LineBorder, ContentBody, AboutMeSubtitle, AboutMeText, AboutMeLocation, EducationSection, AboutButton } from "../components/aboutElements.js";
+import { ButtonDownload } from "../components/buttonElements.js";
+import {graphql, useStaticQuery} from "gatsby";
+import Img from "gatsby-image";
 
 import downloadFile from '../images/CV_XIWAY_EN_FR.pdf'
 

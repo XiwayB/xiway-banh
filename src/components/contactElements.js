@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { SiMinutemailer, SiLinkedin, SiGithub } from "react-icons/Si"
+import styled from "styled-components";
+import { SiMinutemailer, SiLinkedin, SiGithub } from "react-icons/Si";
 
 export const ContactPageWrapper = styled.div`
   margin-top: 60px;

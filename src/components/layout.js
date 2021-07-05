@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import Navbar from "./navbar"
-import Footer from "./footer"
-import Sidebar from "./sidebar"
-import "./layout.css"
+import React, { useState } from "react";
+import Navbar from "./Navbar/navbar.js";
+import Footer from "./Footer/footer.js";
+import Sidebar from "./Sidebar/sidebar.js";
+import "./layout.css";
 
 const Layout = ({ children }) => {
 

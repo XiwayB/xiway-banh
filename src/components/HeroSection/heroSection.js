@@ -1,7 +1,7 @@
-import React from "react"
-import "./heroSection.css"
-import { ButtonHero } from "../buttonElements"
-import Typed from 'react-typed'
+import React from "react";
+import "./heroSection.css";
+import { ButtonHero } from "../buttonElements.js";
+import Typed from 'react-typed';
 
 function HeroSection() {
   return (

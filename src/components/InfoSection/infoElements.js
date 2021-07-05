@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import { FaSass, FaBootstrap, FaGithub } from "react-icons/fa"
-import { ImHtmlFive } from "react-icons/im"
-import { DiCss3, DiGit, DiIllustrator } from "react-icons/di"
-import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma, SiPostman, SiWebpack, SiGatsby } from "react-icons/si"
+import styled from "styled-components";
+import { FaSass, FaBootstrap, FaGithub } from "react-icons/fa";
+import { ImHtmlFive } from "react-icons/im";
+import { DiCss3, DiGit, DiIllustrator } from "react-icons/di";
+import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma, SiPostman, SiWebpack, SiGatsby } from "react-icons/Si";
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -49,7 +49,6 @@ export const Column = styled.div`
 `
 
 export const TextWrapper = styled.div`
-  opacity: 0;
   max-width: 740px;
   padding-top: 0;
   padding-bottom: 60px;

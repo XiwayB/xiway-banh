@@ -1,7 +1,7 @@
-import * as React from "react"
-import Layout from "../components/layout"
+import * as React from "react";
+import Layout from "../components/layout.js";
 // import Seo from "../components/seo"
-import { ContactPageWrapper, ContactSection, ContactSubSection, IconLink, IconEmail, IconLinkedIn, IconGitHub } from "../components/contactElements.js"
+import { ContactPageWrapper, ContactSection, ContactSubSection, IconLink, IconEmail, IconLinkedIn, IconGitHub } from "../components/contactElements.js";
 
 
 const Contact = () => (

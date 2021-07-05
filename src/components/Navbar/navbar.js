@@ -1,26 +1,32 @@
-import React, { useState, useEffect } from 'react'
-import { FaBars } from "react-icons/fa"
-import { IconContext } from "react-icons/lib"
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from "./navbarElements"
+import React, { useState, useEffect } from 'react';
+import { FaBars } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from "./navbarElements";
+
+const isBrowser = typeof window !== "undefined"
+console.log("IS BROWSER", isBrowser)
 
 const Navbar = ({toggle}) => {
+
   const[click, setClick] = useState(false)
   const[scroll, setScroll] = useState(false)
 
   const handleClick = () => setClick(!click)
 
-  const changeNav = () => {
-    if(window.scollY >= 80) {
-      setScroll(true)
-    } else {
-      setScroll(false)
-    }
-  }
+  if(isBrowser) {
+      const changeNav = () => {
+      if(window.scollY >= 80) {
+        setScroll(true)
+      } else {
+        setScroll(false)
+      }
+    };
 
-  useEffect(() => {
-    changeNav()
-    window.addEventListener("scroll", changeNav)
-  }, [])
+    useEffect(() => {
+      changeNav()
+      window.addEventListener("scroll", changeNav)
+    });
+  };
 
   return(
     <>

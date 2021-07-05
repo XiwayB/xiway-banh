@@ -1,7 +1,7 @@
-import React from "react"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
-import { FooterContainer, SocialIcons, SocialIconLink, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights, ScrollUp } from "./footerElements"
-import { animateScroll as scroll} from "react-scroll"
+import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FooterContainer, SocialIcons, SocialIconLink, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights, ScrollUp } from "./footerElements.js";
+import { animateScroll as scroll} from "react-scroll";
 
 const Footer = () => {
 
@@ -15,7 +15,7 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to= "/">
-            X.B.
+            X.B
           </SocialLogo>
           <WebsiteRights>Coded and Designed by Xiway © {new Date().getFullYear()}
           </WebsiteRights>

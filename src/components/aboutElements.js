@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { BsCircleFill } from "react-icons/Bs"
+import styled from "styled-components";
+import { BsCircleFill } from "react-icons/Bs";
 
 export const AboutPageWrapper = styled.div`
   margin-top: -237px;

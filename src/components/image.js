@@ -1,8 +1,8 @@
-import React from "react"
-import {graphql, useStaticQuery} from "gatsby"
-import "./image.css"
-import { ButtonProjects } from "./buttonElements"
-import BackgroundImage from "gatsby-background-image"
+import React from "react";
+import {graphql, useStaticQuery} from "gatsby";
+import "./image.css";
+import { ButtonProjects } from "./buttonElements.js";
+import BackgroundImage from "gatsby-background-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 

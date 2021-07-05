@@ -1,8 +1,8 @@
-import * as React from "react"
-import Layout from "../components/layout"
-import HeroSection from "../components/heroSection"
-import Image from "../components/image"
-import InfoSection from "../components/infoSection"
+import * as React from "react";
+import Layout from "../components/layout.js";
+import HeroSection from "../components/HeroSection/heroSection.js";
+import Image from "../components/image.js";
+import InfoSection from "../components/InfoSection/infoSection.js";
 
 // import Seo from "../components/seo"
 

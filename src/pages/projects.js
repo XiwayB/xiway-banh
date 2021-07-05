@@ -1,76 +1,45 @@
-import React, { useRef } from "react"
-import { useIntersection } from "react-use"
-import Layout from "../components/layout"
+import React from "react";
+import Layout from "../components/layout.js";
 // import Seo from "../components/seo"
-import { ProjectsPageWrapper, ProjectSection1, StackIcons, IconHtml, IconCss, IconJavaScript, IconRails, IconLink, ProjectButtons, ProjectCard, ProjectMainInfos, IconHeroku, IconWXMP } from "../components/projectsElements.js"
-import { ButtonProject } from "../components/buttonElements.js"
-import {graphql, useStaticQuery} from "gatsby"
-import Img from "gatsby-image"
-import "../components/image.css"
-import gsap from "gsap"
+import { ProjectsPageWrapper, ProjectSection1, StackIcons, IconHtml, IconCss, IconJavaScript, IconRails, IconLink, ProjectButtons, ProjectCard, ProjectMainInfos, IconHeroku, IconWXMP } from "../components/projectsElements.js";
+import { ButtonProject } from "../components/buttonElements.js";
+import {graphql, useStaticQuery} from "gatsby";
+import Img from "gatsby-image";
+import "../components/image.css";
 
 const Projects = () => {
 
-  const sectionRef = useRef(null)
-
-  const intersection = useIntersection(sectionRef, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.1
-  });
-
-  const fadeIn = (element) => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      y: -60,
-      ease: 'power4.out',
-      stagger: {
-        amount: .3
-      }
-    })
-  };
-
-  const fadeOut = (element) => {
-   // gsap.to(element, 1, {
-   //    opacity: 0,
-   //    y: -20,
-   //    ease: 'power4.out',
-   //  })
-  };
-
-  intersection && intersection.intersectionRatio < 0.1 ?
-  fadeOut(".fadeIn") : fadeIn(".fadeIn");
-
-const data = useStaticQuery(graphql`
-  query {
-  allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}
-   name: {nin: ["gatsby-astronaut", "gatsby-icon", "about_me"]}
-  }
-   ) {
-    edges {
-      node {
-        base
-        childImageSharp {
-        fluid(maxHeight: 500, maxWidth: 700) {
-          ...GatsbyImageSharpFluid
-        }
+  const data = useStaticQuery(graphql`
+    query {
+    allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}
+     name: {nin: ["gatsby-astronaut", "gatsby-icon", "about_me"]}
+    }
+     ) {
+      edges {
+        node {
+          base
+          childImageSharp {
+          fluid(maxHeight: 500, maxWidth: 700) {
+            ...GatsbyImageSharpFluid
+          }
+          }
         }
       }
     }
   }
-}
-  `)
+    `)
    const findImage = (image) => {
     const result = data.allFile.edges.find(element => element.node.base === image)
     return result.node.childImageSharp.fluid
     }
+
   return(
     <Layout>
 {/*    <Seo title="Page two" />*/}
-      <ProjectsPageWrapper ref={sectionRef}>
-        <h1 className="fadeIn">PROJECTS</h1>
+      <ProjectsPageWrapper>
+        <h1>PROJECTS</h1>
 
-        <ProjectCard className="fadeIn">
+        <ProjectCard>
           <ProjectSection1 id="taboard">
           <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")}/>
             <ProjectMainInfos>
@@ -119,9 +88,9 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard className="fadeIn">
+        <ProjectCard>
           <ProjectSection1 id="t.a.l.o.n" >
-            <Img className="image-project" fluid={findImage("T.A.L.O.N_on_iPhone_2.png")} />
+            <Img className="image-project" fluid={findImage("T.A.L.O.N_on_iPhone.png")} />
             <ProjectMainInfos>
               <h2>T.A.L.O.N</h2>
               <p>A WeChat MiniProgram which works as
@@ -162,15 +131,15 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard className="fadeIn">
+        <ProjectCard>
           <ProjectSection1 id="all-you-can-watch">
             <Img className="image-project" fluid={findImage("All_you_can_watch_on_Mac.png")} />
             <ProjectMainInfos>
               <h2>All You Can Watch</h2>
               <p>A simple rails application to classify your favorite
-                movies by genres and add your personal reviews.
+                movies by genres and add your personal reviews.</p>
                 <p>I built this aplication by myself.</p>
-                It was a good occasion to test some npm packages:</p>
+                <p>It was a good occasion to test some npm packages:</p>
                 <ul>
                   <li>Draggable</li>
                   <li>Typed.JS</li>
@@ -203,9 +172,9 @@ const data = useStaticQuery(graphql`
           </ProjectSection1>
         </ProjectCard>
 
-        <ProjectCard className="fadeIn">
+        <ProjectCard>
           <ProjectSection1 id="jieqi">
-            <Img className="image-project" fluid={findImage("JieQi_on_iPhone_2.png")} />
+            <Img className="image-project" fluid={findImage("JieQi_on_iPhone.png")} />
             <ProjectMainInfos>
               <h2>JieQi</h2>
               <p>A WeChat MiniProgram that keeps you healthy
