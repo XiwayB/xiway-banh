@@ -31,7 +31,11 @@ const Projects = () => {
     `)
    const findImage = (image) => {
     const result = data.allFile.edges.find(element => element.node.base === image)
-    return result.node.childImageSharp.fluid
+    if(result === undefined) {
+      return null
+    } else {
+      return result.node.childImageSharp.fluid
+      }
     }
 
   return(
