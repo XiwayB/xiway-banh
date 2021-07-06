@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaSass, FaBootstrap, FaGithub } from "react-icons/fa";
 import { ImHtmlFive } from "react-icons/im";
 import { DiCss3, DiGit, DiIllustrator } from "react-icons/di";
-import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma, SiPostman, SiWebpack, SiGatsby } from "react-icons/Si";
+import { SiJavascript, SiRuby, SiRails, SiReact, SiRedux, SiPostgresql, SiFigma, SiPostman, SiWebpack, SiGatsby } from "react-icons/si";
 
 export const InfoContainer = styled.div`
   color: #fff;
