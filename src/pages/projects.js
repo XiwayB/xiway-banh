@@ -18,6 +18,7 @@ const Projects = () => {
       edges {
         node {
           base
+          absolutePath
           childImageSharp {
           fluid(maxHeight: 500, maxWidth: 700) {
             ...GatsbyImageSharpFluid
