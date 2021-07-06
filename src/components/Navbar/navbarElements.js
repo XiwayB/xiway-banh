@@ -16,6 +16,13 @@ export const Nav = styled.nav`
   @media screen and (max-width: 768px){
     background: ${({ click }) => (click ? "fff" : "transparent")};
     transition: 0.8s all ease;
+    width: 771px;
+  }
+
+  @media screen and (max-width: 375px){
+    background: ${({ click }) => (click ? "fff" : "transparent")};
+    transition: 0.8s all ease;
+    width: 472px;
   }
 `
 

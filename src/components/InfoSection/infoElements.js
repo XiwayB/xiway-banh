@@ -14,6 +14,10 @@ export const InfoContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    padding-top: 15rem;
+  }
+
+  @media screen and (max-width: 375px) {
     padding-top: 100px;
   }
 `
@@ -60,9 +64,9 @@ export const TextWrapper = styled.div`
     margin-bottom: 125px;
   }
 
-  @media screen and (max-width: 768px){
-    margin-left: 41px;
-    width: 345px;
+  @media screen and (max-width: 375px){
+    margin-left: 27px;
+    width: 320px;
     margin-bottom: 125px;
   }
 
@@ -112,7 +116,7 @@ export const DevIcons = styled.div`
     margin-bottom: 74px;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 375px){
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 50px;
     width: 368px;

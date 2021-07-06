@@ -9,6 +9,14 @@ export const FooterContainer = styled.div`
   align-items: center;
   margin-top: 150px;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    width: 772px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 474px;
+  }
 `
 
 export const SocialMedia = styled.section`

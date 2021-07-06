@@ -20,6 +20,14 @@ export const ContactPageWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    margin-top: 7rem;
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
     margin-left: 77px;
     margin-top: 70px;
 

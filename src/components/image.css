@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .image-about-me {
     left: 19px;
     top: 495px;
@@ -132,7 +132,7 @@
   }
 
   .image-container {
-    margin-left: -180px;
+    margin-left: -198px;
     margin-top: -119px;
   }
   .image-container h1 {

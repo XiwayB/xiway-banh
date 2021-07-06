@@ -32,7 +32,21 @@ export const AboutPageWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    margin-left: 146px;
+
+    h2 {
+      font-size: 40px;
+      width: 400px;
+    }
+
+    h3 {
+    font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
     margin-left: 78px;
+    margin-top: -14rem;
 
     h2 {
       font-size: 40px;

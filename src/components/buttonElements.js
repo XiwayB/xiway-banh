@@ -36,10 +36,17 @@ export const Button = styled(Link) `
   }
 
   @media screen and (max-width: 768px){
-    margin: 0px 98px 42px 193px;
+    margin: 0px 459px 18px 101px;
     position: relative;
-    top: -250px;
-    left: -43px;
+    top: -221px;
+    left: -36px;
+  }
+
+  @media screen and (max-width: 375px){
+    margin: 0px 58px 9px 165px;
+    position: relative;
+    top: -221px;
+    left: -36px;
   }
 
 `
@@ -72,7 +79,11 @@ export const ButtonProjects = styled(Link) `
   }
 
   @media screen and (max-width: 768px){
-    margin: 1106px 79px;
+    margin: 413px 386px 0px 0px;
+  }
+
+  @media screen and (max-width: 375px){
+    margin: 1106px -3px;
   }
 
 `
@@ -99,6 +110,12 @@ export const ButtonHero = styled(Link) `
   }
 
   @media only screen and (max-width: 768px) {
+    margin-top: 10rem;
+    font-size: 15px;
+  }
+
+
+  @media only screen and (max-width: 375px) {
     margin-top: 105px;
     font-size: 15px;
   }
@@ -171,8 +188,13 @@ export const ButtonDownload = styled.div `
   }
 
   @media screen and (max-width: 768px){
-    margin-right: -23px;
-    margin-left: 128px;
+    margin-right: 160px;
+    margin-left: 294px;
+  }
+
+  @media screen and (max-width: 375px){
+    margin-right: -52px;
+    margin-left: 150px;
   }
 
 `

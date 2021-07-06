@@ -23,7 +23,16 @@ export const ProjectsPageWrapper = styled.div`
   }
 
   @media(max-width: 768px){
+    margin-top: 3rem;
+
+    h1 {
+    font-size: 40px;
+    }
+  }
+
+  @media(max-width: 375px){
     margin-left: 70px;
+    margin-top: 3rem;
 
     h1 {
     font-size: 40px;
@@ -86,6 +95,19 @@ export const ProjectMainInfos = styled.div`
   }
 
   @media screen and (max-width: 768px){
+    width: 394px;
+
+    p {
+      font-size: 16px;
+    }
+
+    ul {
+      font-size: 16px;
+    }
+
+  }
+
+  @media screen and (max-width: 365px){
     width: 343px;
 
     p {
