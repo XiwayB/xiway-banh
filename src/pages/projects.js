@@ -46,7 +46,7 @@ const Projects = () => {
 
         <ProjectCard>
           <ProjectSection1 id="taboard">
-          <Img className="image-project" fluid={findImage("TaBoard_on_Mac.png")}/>
+          <Img className="image-project" fluid={findImage("TaBoard_on_Mac_1.png")}/>
             <ProjectMainInfos>
               <h2>TaBoard</h2>
               <p>A rails application that will free you

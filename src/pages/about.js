@@ -65,7 +65,7 @@ const About = () => {
               <AboutMeText>
                 I started my journey working in a Fintech.
                 I was taking care of end-users by helping them creating
-                their accounts and providing them advices so that they can make the
+                their accounts and providing them tips so that they could make the
                 best use of the product
               </AboutMeText>
             </ContentBody>
@@ -90,8 +90,8 @@ const About = () => {
               </AboutMeLocation>
               <AboutMeText>
                 I was helping Operation team members
-                by providing them the best tools and
-                creating efficent processes so that they can focus on taking care of end-users
+                by providing them efficient tools,
+                creating and automating processes for them to focus on taking care of end-users
               </AboutMeText>
             </ContentBody>
           </ContentSection>
