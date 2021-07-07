@@ -1,3 +1,5 @@
+import {Helmet} from 'react-helmet';
+import useSiteMetadata from './use-siteMetadata';
 import React, { useState } from "react";
 import Navbar from "./Navbar/navbar.js";
 import Footer from "./Footer/footer.js";
@@ -12,8 +14,16 @@ const Layout = ({ children }) => {
     setIsOpen(!isOpen)
   }
 
+  const {title, description} = useSiteMetadata();
+
   return (
     <>
+
+      <Helmet>
+        <html lang='en' />
+        <title>{title}</title>
+        <meta name='description' content={description} />
+      </Helmet>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <main>{children}</main>

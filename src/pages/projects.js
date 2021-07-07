@@ -57,8 +57,8 @@ const Projects = () => {
                 <li>Product Manager</li>
                 <li>Lead developer</li>
                 <li>
-                  Back-end developer: created the DB schema and
-                  implemented rails structure, created REST APIs for the
+                  Back-end developer: created the DB schema,
+                  implemented rails structure and authentication via Google Auth, created REST APIs for the
                   front-end
                 </li>
                 <li>
